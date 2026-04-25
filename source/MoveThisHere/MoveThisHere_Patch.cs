@@ -88,7 +88,7 @@ namespace MoveThisHere
         {
             public static bool Prefix(Vector3 pos, Orientation orientation, IList<Tag> selected_elements, int layer, BuildingDef __instance, ref GameObject __result)
             {
-                if (__instance.name != "HaulingPoint")
+                if (__instance.PrefabID != HaulingPointConfig.Id)
                 {
                     return true;
                 }
